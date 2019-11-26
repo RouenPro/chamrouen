@@ -1,64 +1,86 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-		<title></title>
-	</head>
-	<body>
-		<div id="header">
-			<h1 class="hover">Welcome to Porterville</h1>
-			<p id="name">P. Yohance Crumpton<p/>
-			<a href="mailto:pyzc77@gmail.com><p id="email">pyzc77@gmail.com</p></a>
-			<p>or</p>
-			<a href="mailto:doctortransit@outlook.com><p id="email">doctortransit@outlook.com</p></a>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
 
-		</div>
-		<h2>Things I like to do</h2>
-			<img src="http://farm8.staticflickr.com/7419/10928807126_c75098ebfe_n.jpg">
-			<img src="http://farm4.staticflickr.com/3696/11174857204_cced708349_n.jpg">
-			<img src="http://farm3.staticflickr.com/2809/11467603726_2c301c093a_m.jpg">
-			<img src="http://farm3.staticflickr.com/2839/11467599266_e99d516716_m.jpg">
-			<img src="http://farm4.staticflickr.com/3829/11467551254_2e1ffed34b_n.jpg">
-		<h2>About Me</h2>
-			<p>My name is Porter. I have lived in both Chicago and the District of Columbia.
-			Some of my favorite things to do are read, 
-			listen to music, and ride public transportation (buses and trains).
-			These are activities that I enjoy immensely and indulge in daily.
-			My career aspirations are to become either a civil or transportation
-			engineer. I have been told that I am a charming, kind, attitude-prone 
-			person with "oddities". I look up mostly to my family members, especially
-			my mom, as a guiding figure in life. Favorite shows of mine include 
-			Doctor Who, Sherlock, Triple D (Diners, Drive-Ins' and Dives), Hustle,
-			and Chopped (yes, the majority of those are British TV shows, problem, mate?).
-			Just a few things about yours truly</p>
-			<h2>Favorite TV Shows</h2>
-			<ul>
-				<li>Doctor Who</li>
-				<li>Sherlock</li>
-				<li>Triple D (Diners, Drive-Ins' and Dives)</li>
-				<li>Hustle</li>
-				<li>Chopped</li>
-			</ul>
-			<h2>Favorite Places by City</h2>
-			<table border="1"> 
-				<tr>
-					<th>Chicago</th>
-					<th>D.C.</th>
-				</tr>
-				<tr>
-					<td>Taqueria el Asadero (Resturant)</td>
-					<td>The Hitching Post (Resturant)</td>
-					
-				</tr>
-				<tr>
-					<td>Harold Washington Memorial Library</td>
-					<td>MLK Memorial Library</td>
-				</tr>
-				<tr>
-					<td>95th-Dan Ryan Sta</td>
-					<td>Fort Totten Sta</td>
-				<tr>
-			</table>
-		<p>4830 Monroe St NW, #200<p>
-	</body>
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#f1f1f1;padding:15px;">
+  <h1>Cinque Terre</h1>
+  <h3>Resize the browser window</h3>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem">The Walk</div>
+    <div class="menuitem">Transport</div>
+    <div class="menuitem">History</div>
+    <div class="menuitem">Gallery</div>
+  </div>
+
+  <div class="main">
+    <h2>The Walk</h2>
+    <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending on the weather conditions and your physical shape.</p>
+    <img src="img_5terre.jpg" style="width:100%">
+  </div>
+
+  <div class="right">
+    <h2>What?</h2>
+    <p>Cinque Terre comprises five villages: Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
+    <h2>Where?</h2>
+    <p>On the northwest cost of the Italian Riviera, north of the city La Spezia.</p>
+    <h2>Price?</h2>
+    <p>The Walk is free!</p>
+  </div>
+</div>
+
+
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> This web page is a part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content respond to the resizing.</div>
+
+</body>
 </html>
+
